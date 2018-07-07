@@ -41,9 +41,9 @@ table, th, td {
 <body  bgcolor="lightblue">
 <form action="" method="get" align = "center">
     <div class="row form-group" align = "center">
-	<div class="col-md-6" align = "center">
+	<div class="col-md-10" >
             
-            <input type="text" name="SchoolName" class="form-control" placeholder="Name of the School" align="center">
+            <input type="text" name="SchoolName" placeholder="Name of the School"><br>
             Locality<br>
                 Rural <input type="radio" name="Locality">
                 Urban <input type="radio" name="Locality">
@@ -94,8 +94,6 @@ table, th, td {
 	</div>
     </div>
     
-
-
 Total Number of Students: <input type="text" name="NumberOfStudent" required> <br>
 
 Kannada Medium <br>
