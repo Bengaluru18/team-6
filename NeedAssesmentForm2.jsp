@@ -1,6 +1,7 @@
 Sanitation <br>
 
 <table style="width:50%" name="Sanitation">
+	
   <tr>
     <th>Toilet Details</th>
     <th >Availability</th>
