@@ -44,33 +44,31 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2 text-left">
-					<div id="fh5co-logo"><a href="home.jsp">CWF<span>.</span></a></div>
+					<div id="fh5co-logo"><a href="index.html">CWF<span>.</span></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li><a href="home.jsp">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li class="has-dropdown">
-							<a href="adminlogin.jsp">Login</a>
+							<a href="services.html">Login</a>
 							<ul class="dropdown">
-								<li><a href="adminlogin.jsp">Admin</a></li>
-								<li><a href="ngologin.jsp">NGO</a></li>
-								<li><a href="volunteerlogin.jsp">Volunteer</a></li>
+								<li><a href="adminlogin.html">Admin</a></li>
+								<li><a href="ngologin.html">NGO Head</a></li>
+								<li><a href="volunteerlogin.html">Volunteer</a></li>
 								
 							</ul>
 						</li>
 
 						
+						<li><a href="about.html">About</a></li>
 						
-						
-						<li><a href="contact.jsp">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 	</nav>
-        </div>
-       
 
 	
 
@@ -82,19 +80,19 @@
 				
 				<div class="col-md-6 animate-box" >
 					<h3>Admin Login</h3>
-					<form action="#">
+					<form action="loginadmin" method="post">
 						
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email</label>
-                                                                <input type="text" id="email" class="form-control"  placeholder="Your email address" required>
+								<input type="text" id="email" name="loginusername" class="form-control" required placeholder="Your email address">
 							</div>
 						</div>
                                             <div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Password</label>
-								<input type="password" id="password" class="form-control" placeholder="Your Password" required>
+								<input type="password" id="password" name="loginpassword" class="form-control" required placeholder="Your Password">
 							</div>
 						</div>
 

@@ -44,25 +44,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2 text-left">
-					<div id="fh5co-logo"><a href="index.html">CWF<span>.</span></a></div>
+					<div id="fh5co-logo"><a href="index.jspp">CWF<span>.</span></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="home.jsp">Home</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">Login</a>
+							<a href="adminlogin.jsp">Login</a>
 							<ul class="dropdown">
-								<li><a href="adminlogin.html">Admin</a></li>
-								<li><a href="ngologin.html">NGO Head</a></li>
-								<li><a href="volunteerlogin.html">Volunteer</a></li>
+								<li><a href="adminlogin.jsp">Admin</a></li>
+								<li><a href="ngologin.jsp">NGO</a></li>
+								<li><a href="volunteerlogin.jsp">Volunteer</a></li>
 								
 							</ul>
 						</li>
 
 						
-						<li><a href="about.html">About</a></li>
 						
-						<li><a href="contact.html">Contact</a></li>
+						
+						<li><a href="contact.jsp">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -70,20 +70,6 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7 text-left">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
-							<h1 class="mb30">Welcome</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
 	
 
@@ -92,20 +78,20 @@
 			<div class="row">
 				
 				<div class="col-md-6 animate-box">
-					<h3>NGO Login</h3>
-					<form action="#">
+					<h3>Volunteer Login</h3>
+					<form action="loginvolunteer" method="post">
 						
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
+								<input type="text" id="email" required name="loginusername" class="form-control" placeholder="Your email address" required>
 							</div>
 						</div>
                                             <div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Password</label>
-								<input type="password" id="password" class="form-control" placeholder="Your Password">
+								<input type="password" id="password" required name="loginpassword" class="form-control" placeholder="Your Password" required>
 							</div>
 						</div>
 
@@ -129,10 +115,8 @@
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="twitter.com"><i class="icon-twitter"></i></a></li>
+							<li><a href="facebook.com"><i class="icon-facebook"></i></a></li>
 						</ul>
                                 </div>
                                

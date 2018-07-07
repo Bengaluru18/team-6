@@ -79,19 +79,19 @@
 				
 				<div class="col-md-6 animate-box">
 					<h3>Volunteer Login</h3>
-					<form action="#">
+					<form action="loginvolunteer" method="post">
 						
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Email</label>
-								<input type="text" id="email" class="form-control" placeholder="Your email address" required>
+								<input type="text" id="email" required name="loginusername" class="form-control" placeholder="Your email address" required>
 							</div>
 						</div>
                                             <div class="row form-group">
 							<div class="col-md-12">
 								<label for="email">Password</label>
-								<input type="password" id="password" class="form-control" placeholder="Your Password" required>
+								<input type="password" id="password" required name="loginpassword" class="form-control" placeholder="Your Password" required>
 							</div>
 						</div>
 
