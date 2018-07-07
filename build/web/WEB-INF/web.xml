@@ -12,6 +12,14 @@
         <servlet-name>loginvolunteer</servlet-name>
         <servlet-class>loginvolunteer</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>enterdetails</servlet-name>
+        <servlet-class>enterdetails</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginadmin</servlet-name>
         <url-pattern>/loginadmin</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>loginvolunteer</servlet-name>
         <url-pattern>/loginvolunteer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enterdetails</servlet-name>
+        <url-pattern>/enterdetails</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
