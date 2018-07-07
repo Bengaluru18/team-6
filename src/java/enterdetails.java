@@ -26,6 +26,7 @@ public class enterdetails extends HttpServlet {
         String url="jdbc:mysql://localhost:3306/cfw";
        String UN="root";
        String PW="root";
+       
         PrintWriter out= response.getWriter();
         String schoolname=request.getParameter("SchoolName");
         String locality=request.getParameter("Locality");
@@ -186,7 +187,10 @@ public class enterdetails extends HttpServlet {
         String c8=request.getParameter("c8");
         String c9=request.getParameter("c9");
         String c10=request.getParameter("c10");
-       
+        
+
+       PreparedStatement classroom_environment=null;
+       PreparedStatement school_environment= null;
        PreparedStatement schooldetails=null;
        PreparedStatement student=null;
        PreparedStatement scst=null;
@@ -320,7 +324,7 @@ public class enterdetails extends HttpServlet {
          teachercount.setString(5 ,tct);
          teachercount.execute();
          teachercount.close();
-         /*teacher_details=con.prepareStatement("insert into teacher_details(school_id,designation,tname,contact_number,email) values (?,?,?,?,?)");
+         teacher_details=con.prepareStatement("insert into teacher_details(school_id,designation,tname,contact_number,email) values (?,?,?,?,?)");
          teacher_details.setInt(1, schoolid);
          teacher_details.setString(2,hmdesig);
          teacher_details.setString(3,hmname);
@@ -335,7 +339,7 @@ public class enterdetails extends HttpServlet {
          teacher_details.setString(4,atnumber);
          teacher_details.setString(5,atemail);
          teacher_details.execute();
-         teacher_details.close();
+         teacher_details.close();/*
          teacher_details=con.prepareStatement("insert into teacher_details(school_id,designation,tname,contact_number,email) values (?,?,?,?,?)");
          teacher_details.setInt(1, schoolid);
          teacher_details.setString(2,crpdesig);
@@ -359,7 +363,7 @@ public class enterdetails extends HttpServlet {
          teacher_details.setString(4,beonumber);
          teacher_details.setString(5,beoemail);
          teacher_details.execute();
-         teacher_details.close();*/
+         teacher_details.close();
          org=con.prepareStatement("insert into individual_donor(donor_name,total_members,major_activities,contact_details) values(?,?,?,?)");
          org.setString(1, sp411);
          org.setString(2, sp412);
@@ -380,7 +384,8 @@ public class enterdetails extends HttpServlet {
          org.setString(3, sp433);
          org.setString(4, sp434);
          org.execute();
-         org.close();
+         org.close();*/
+         
           out.println("<script type=\"text/javascript\">");
                 out.println("alert('Successfully Entered');");
                 out.println("location='volunteerpanel.jsp';");

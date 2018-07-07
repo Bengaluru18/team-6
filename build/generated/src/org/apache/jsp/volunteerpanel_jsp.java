@@ -366,8 +366,7 @@ public final class volunteerpanel_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("  \n");
       out.write("</table>\n");
       out.write("\n");
-      out.write("Any Other Information:\n");
-      out.write("<Textarea rows=\"3\" cols=\"50\" name=\"otherinfo\" ></Textarea>\n");
+      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("<input type=\"submit\" value=\"Submit\">\n");

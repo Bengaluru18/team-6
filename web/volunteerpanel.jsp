@@ -323,8 +323,7 @@ School Profile continuation <br>
   
 </table>
 
-Any Other Information:
-<Textarea rows="3" cols="50" name="otherinfo" ></Textarea>
+
 
 
 <input type="submit" value="Submit">

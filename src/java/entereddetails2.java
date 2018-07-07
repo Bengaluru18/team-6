@@ -35,7 +35,7 @@ public class entereddetails2 extends HttpServlet {
         String tb5= request.getParameter("TFB3");
         String tb6= request.getParameter("TFB3");*/
         
-        String[] tb= new String[4];
+        String[] tb= new String[5];
         for(int i=0; i<=4;i++){
         tb[i]= request.getParameter("TFB"+i);
         }
@@ -47,7 +47,7 @@ public class entereddetails2 extends HttpServlet {
         String ub6= request.getParameter("UFB3");
         String ub7= request.getParameter("UFB4");*/
         
-        String[] ub= new String[4];
+        String[] ub= new String[5];
         for(int i=0; i<=4;i++){
         ub[i]= request.getParameter("UFB"+i);
         }
@@ -60,7 +60,7 @@ public class entereddetails2 extends HttpServlet {
         String ug6= request.getParameter("TFG3");
         String ug7= request.getParameter("TFG4");*/
         
-         String[] ug= new String[4];
+         String[] ug= new String[5];
         for(int i=0; i<=4;i++){
         ug[i]= request.getParameter("TFG"+i);
         }
@@ -73,7 +73,7 @@ public class entereddetails2 extends HttpServlet {
         String tcwsn6= request.getParameter("TFC3");
         String tcwsn7= request.getParameter("TFC4");*/
         
-        String[] tcwsn = new String[4];
+        String[] tcwsn = new String[5];
         for(int i=0; i<=4;i++){
         tcwsn[i]= request.getParameter("TFC"+i);
         }
@@ -86,7 +86,7 @@ public class entereddetails2 extends HttpServlet {
         String ts6= request.getParameter("TFS3");
         String ts7= request.getParameter("TFS4");*/
         
-         String[]ts = new String[4];
+         String[]ts = new String[5];
         for(int i=0; i<=4;i++){
         ts[i]= request.getParameter("TFS"+i);
         }
@@ -98,7 +98,7 @@ public class entereddetails2 extends HttpServlet {
         String painting5= request.getParameter("P3");
         String painting6= request.getParameter("P3");
         String painting7= request.getParameter("P4");*/
-         String[]painting = new String[4];
+         String[]painting = new String[5];
         for(int i=0; i<=4;i++){
         painting[i]= request.getParameter("P"+i);
         }
@@ -111,7 +111,7 @@ public class entereddetails2 extends HttpServlet {
         String ha6= request.getParameter("HW3");
         String ha7= request.getParameter("HW4");*/
         
-         String[]ha = new String[4];
+         String[]ha = new String[5];
         for(int i=0; i<=4;i++){
         ha[i]= request.getParameter("HW"+i);
         }
@@ -124,7 +124,7 @@ public class entereddetails2 extends HttpServlet {
         String uca6= request.getParameter("UCA3");
         String uca7= request.getParameter("UCA4");*/
         
-         String[]uca = new String[4];
+         String[]uca = new String[5];
         for(int i=0; i<=4;i++){
         ha[i]= request.getParameter("UCA"+i);
         }
@@ -135,7 +135,7 @@ public class entereddetails2 extends HttpServlet {
         String hco4= request.getParameter("HCO3");
         String hco5= request.getParameter("HCO4");*/
         
-         String[]hco = new String[4];
+         String[]hco = new String[5];
         for(int i=0; i<=4;i++){
         hco[i]= request.getParameter("HCO"+i);
         }
@@ -146,7 +146,7 @@ public class entereddetails2 extends HttpServlet {
         String gc4= request.getParameter("GC3");
         String gc5= request.getParameter("GC4");*/
         
-         String[]gc = new String[4];
+         String[]gc = new String[5];
         for(int i=0; i<=4;i++){
         gc[i]= request.getParameter("GC"+i);
         }
@@ -157,7 +157,7 @@ public class entereddetails2 extends HttpServlet {
         String dc4= request.getParameter("DC2");
         String dc5= request.getParameter("DC3");*/
        
-        String[]dc = new String[4];
+        String[]dc = new String[5];
         for(int i=0; i<=4;i++){
         dc[i]= request.getParameter("DC"+i);
         }
@@ -168,7 +168,7 @@ public class entereddetails2 extends HttpServlet {
         String ec4= request.getParameter("EC2");
         String ec5= request.getParameter("EC3");*/
         
-        String[]ec = new String[4];
+        String[]ec = new String[5];
         for(int i=0; i<=4;i++){
         ec[i]= request.getParameter("EC"+i);
         }
@@ -179,7 +179,7 @@ public class entereddetails2 extends HttpServlet {
         String m4= request.getParameter("M2");
         String m5= request.getParameter("M3");*/
         
-        String[]m = new String[4];
+        String[]m = new String[5];
         for(int i=0; i<=4;i++){
         m[i]= request.getParameter("M"+i);
         }
@@ -190,7 +190,7 @@ public class entereddetails2 extends HttpServlet {
         String fa4= request.getParameter("FA2");
         String fa5= request.getParameter("FA3");*/
         
-        String[]fa = new String[4];
+        String[]fa = new String[5];
         for(int i=0; i<=4;i++){
         ec[i]= request.getParameter("FA"+i);
         }

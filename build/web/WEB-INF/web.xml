@@ -20,6 +20,10 @@
         <servlet-name>enterdetails</servlet-name>
         <servlet-class>enterdetails</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>enterdetails2</servlet-name>
+        <servlet-class>enterdetails2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginadmin</servlet-name>
         <url-pattern>/loginadmin</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>enterdetails</servlet-name>
         <url-pattern>/enterdetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enterdetails2</servlet-name>
+        <url-pattern>/enterdetails2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
