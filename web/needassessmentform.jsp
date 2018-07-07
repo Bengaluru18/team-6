@@ -1,9 +1,36 @@
 
 <!DOCTYPE html>
+<title>Care Works</title>
+<html>
+	
+
+  	<!-- Facebook and Twitter integration -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 <head>
 <title> Need Asst. part 1 </title>
 <h1 align="center" >CareWorks Foundation</h1>
-<h2 align="center" >SEP - Need Assessent Format </h2>
+<h2 align="center" >SEP - Need Assessent Form </h2>
 <style>
 table, th, td {
     border: 1px solid black;
@@ -11,31 +38,63 @@ table, th, td {
 }
 </style>
 </head>
-<body align="center" bgcolor="lightblue">
+<body  bgcolor="lightblue">
 <form action="" method="get" align = "center">
-School Profile <input type="text" name="SchoolProfile" required> <br> <br>
-Name <input type="text" name="SchoolName" required> <br> <br>
-Locality   <br>
-Rural <input type="radio" name="Locality">
-Urban <input type="radio" name="Locality">
-Tribal <input type="radio" name="Locality"> <br>
-School Address <textarea  name = "SchoolAddress" rows="4" cols="50" placeholder="Please enter the address" required> </textarea> <br> <br>
-Cluster/Block/Region/State <textarea name = "Region" rows="4" cols="50" placeholder="Please enter the Region" required> </textarea> <br> <br>
-Total Classes <br>
-Lower Primary School (1 - 5th std)<input type="radio" name="TotClasses">
-Higher Primary (1 - 7th std)<input type="radio" name="TotClasses">
-Higher Primary (1-8th std) <input type="radio" name="TotClasses"> <br>
-Gender 
-Male<input type="radio" name="Gender">
-Female<input type="radio" name="Gender">
-Co-ed<input type="radio" name="Gender"> <br>
-Medium of Instructions
-Kannada <input type="radio" name="Medium">
-Kannada and English <input type="radio" name="Medium">
-Tamil <input type="radio" name="Medium">
-Urdu <input type="radio" name="Medium">
-Telugu <input type="radio" name="Medium">
-Other <input type="text" name="Medium"> <br>
+    <div class="row form-group" align = "center">
+	<div class="col-md-6" align = "center">
+            
+            <input type="text" name="SchoolName" class="form-control" placeholder="Name of the School" align="center">
+            Locality<br>
+                Rural <input type="radio" name="Locality">
+                Urban <input type="radio" name="Locality">
+                Tribal <input type="radio" name="Locality"> <br>
+            
+ 
+	</div>
+    </div>
+    <div class="row form-group" align = "center">
+        <div class="row form-group">
+            <div class="col-md-10">
+		<textarea  name = "SchoolAddress" rows="4" cols="50" placeholder="Please enter the address"></textarea> <br>
+                <textarea name = "Region" rows="4" cols="50" placeholder="Please enter the Block/Region/State"></textarea> <br>
+            </div>
+	</div>
+    </div>
+    <div class="row form-group" align = "center">
+        <div class="row form-group">
+            <div class="col-md-10">
+		Total Classes <br>
+                Lower Primary School (1 - 5th std) <input type="radio" name="TotClasses"><br>
+                Higher Primary (1 - 7th std) <input type="radio" name="TotClasses"><br>
+                Higher Primary (1-8th std) <input type="radio" name="TotClasses"> <br>
+                
+              
+            </div>
+	</div>
+    </div>
+    <div class="row form-group" align = "center">
+        <div class="row form-group">
+            <div class="col-md-10">
+                Gender <br>
+                Male<input type="radio" name="Gender">
+                Female<input type="radio" name="Gender">
+                Co-ed<input type="radio" name="Gender"> <br>
+	</div>
+    </div>
+    <div class="row form-group" align = "center">
+        <div class="row form-group">
+            <div class="col-md-10">
+                Medium of Instructions<br>
+                Kannada <input type="radio" name="Medium"><br>
+                Kannada and English <input type="radio" name="Medium"><br>
+                Tamil <input type="radio" name="Medium"><br>
+                Urdu <input type="radio" name="Medium"><br>
+                Telugu <input type="radio" name="Medium"><br>
+                Other <input type="text" name="Medium"> <br>
+	</div>
+    </div>
+    
+
 
 Total Number of Students: <input type="text" name="NumberOfStudent" required> <br>
 
