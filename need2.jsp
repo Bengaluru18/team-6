@@ -116,7 +116,7 @@ Computer Lab
 
   <tr>
     <td><input type="label" value=" Projector Screen" name="ps0"> </td>
-    <td><input type="text" name="ps1></td>
+    <td><input type="text" name="ps1"></td>
     <td><select>
    <option value="YES" name="ps2">Yes</option>
 <option value="NO" name="ps2">No</option>
@@ -157,19 +157,6 @@ Computer Lab
      <td><input type="text" name="an4"></td>
 </tr>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Library
@@ -379,7 +366,7 @@ Science Lab
  
   <tr>
     <td><input type="label" value=" Any other" name="ao0"> </td>
-    <td><input type="text" name="ao1></td>
+    <td><input type="text" name="ao1"></td>
     <td><select>
    <option value="YES" name="ao2">Yes</option>
 <option value="NO" name="ao2">No</option>
