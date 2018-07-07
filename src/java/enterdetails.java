@@ -6,6 +6,9 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,18 +23,19 @@ public class enterdetails extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException 
     {
-        String url="jdbc:mysql://localhost:3306/portal";
+        String url="jdbc:mysql://localhost:3306/cfw";
        String UN="root";
        String PW="root";
         PrintWriter out= response.getWriter();
         String schoolname=request.getParameter("SchoolName");
         String locality=request.getParameter("Locality");
         String address=request.getParameter("SchoolAddress");
-        String region=request.getParameter("Region");
+        String district=request.getParameter("District");
+        String state=request.getParameter("State");
         String totalclasses=request.getParameter("TotClasses");
         String gender=request.getParameter("Gender");
         String moi=request.getParameter("Medium");
-        String total=request.getParameter("NumberOfStudents");
+        String total=request.getParameter("NumberOfStudent");
         String bkm1=request.getParameter("BKM1");
         String bkm2=request.getParameter("BKM2");
         String bkm3=request.getParameter("BKM3");
@@ -142,5 +146,145 @@ public class enterdetails extends HttpServlet {
         String ptm2=request.getParameter("PTM2");
         String ptm3=request.getParameter("PTM3");
         String sp411=request.getParameter("SP411");
+        String sp412=request.getParameter("SP412");
+        String sp413=request.getParameter("SP413");
+        String sp421=request.getParameter("SP421");
+        String sp422=request.getParameter("SP422");
+        String sp423=request.getParameter("SP423");
+        String sp431=request.getParameter("SP431");
+        String sp432=request.getParameter("SP432");
+        String sp433=request.getParameter("SP433");
+        String otherinfo=request.getParameter("otherinfo");
+        String sid=request.getParameter("SchoolID");
+        int schoolid=Integer.parseInt(sid);
+        String mkm1=request.getParameter("MKM1");
+        String mkm2=request.getParameter("MKM2");
+        String mkm3=request.getParameter("MKM3");
+        String mkm4=request.getParameter("MKM4");
+        String mkm5=request.getParameter("MKM5");
+        String mkm6=request.getParameter("MKM6");
+        String mkm7=request.getParameter("MKM7");
+        String mkm8=request.getParameter("MKM8");
+        String mkm9=request.getParameter("MKM9");
+        String mkm10=request.getParameter("MKM10");
+        String c1=request.getParameter("c1");
+        String c2=request.getParameter("c2");
+        String c3=request.getParameter("c3");
+        String c4=request.getParameter("c4");
+        String c5=request.getParameter("c5");
+        String c6=request.getParameter("c6");
+        String c7=request.getParameter("c7");
+        String c8=request.getParameter("c8");
+        String c9=request.getParameter("c9");
+        String c10=request.getParameter("c10");
+       PreparedStatement schooldetails=null;
+       PreparedStatement student=null;
+       
+       Connection con=null;
+       try
+       {
+           Class.forName("com.mysql.jdbc.Driver");
+           con=DriverManager.getConnection(url,UN,PW);
+           schooldetails=con.prepareStatement("insert into school_details (school_id,school_name,locality,address,district,state,totalclasses,gender,total_no_of_students,MOI,DISE) values(?,?,?,?,?,?,?,?,?,?,?)");
+           schooldetails.setInt(1, schoolid);
+           schooldetails.setString(2, schoolname);
+           schooldetails.setString(3,locality);
+           schooldetails.setString(4, address);
+           schooldetails.setString(5, district);
+           schooldetails.setString(6,state);
+           schooldetails.setString(7, totalclasses);
+           schooldetails.setString(8, gender);
+           schooldetails.setString(9, total);
+           schooldetails.setString(10, moi);
+           schooldetails.setString(11, dise);
+           //out.println(schoolname +""+locality+""+address+""+district+""+state+""+totalclasses+""+gender+""+total+""+moi+""+dise);
+           //schooldetails.execute();
+           
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
+           student.setString(2, c1);
+           student.setString(3, bkm1);
+           student.setString(4,gkm1);
+           student.setString(5, tkm1);
+           student.setString(6,mkm1 );
+           student.execute();
+           /*student.setString(1, schoolid);
+           student.setString(2, c2);
+           student.setString(3, bkm2);
+           student.setString(4, gkm2);
+           student.setString(5, mkm2);
+           student.setString(6, tkm2);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c3);
+           student.setString(3, bkm3);
+           student.setString(4, gkm3);
+           student.setString(5, mkm3);
+           student.setString(6, tkm3);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c4);
+           student.setString(3, bkm4);
+           student.setString(4, gkm4);
+           student.setString(5, mkm4);
+           student.setString(6, tkm4);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c5);
+           student.setString(3, bkm5);
+           student.setString(4, gkm5);
+           student.setString(5, mkm5);
+           student.setString(6, tkm5);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c6);
+           student.setString(3, bkm6);
+           student.setString(4, gkm6);
+           student.setString(5, mkm6);
+           student.setString(6, tkm6);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c7);
+           student.setString(3, bkm7);
+           student.setString(4, gkm7);
+           student.setString(5, mkm7);
+           student.setString(6, tkm7);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c8);
+           student.setString(3, bkm8);
+           student.setString(4, gkm8);
+           student.setString(5, mkm8);
+           student.setString(6, tkm8);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c9);
+           student.setString(3, bkm9);
+           student.setString(4, gkm9);
+           student.setString(5, mkm9);
+           student.setString(6, tkm9);
+           student.addBatch();
+           student.setString(1, schoolid);
+           student.setString(2, c10);
+           student.setString(3, bkm10);
+           student.setString(4, gkm10);
+           student.setString(5, mkm10);
+           student.setString(6, tkm10);
+           student.addBatch();*/
+           
+           
+          out.println("<script type=\"text/javascript\">");
+                out.println("alert('Successfully Entered');");
+                out.println("location='volunteerpanel.jsp';");
+                out.println("</script>");
+           
+       }
+       catch(Exception e)
+       {
+           out.println("<script type=\"text/javascript\">");
+                out.println("alert('Incorrect Data Entered, Try Again');");
+                out.println("location='volunteerpanel.jsp';");
+                out.println("</script>");
+       }
     }
 }

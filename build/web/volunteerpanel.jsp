@@ -84,14 +84,15 @@
 		</div>
 	
 <form action="enterdetails" method="post" align = "center">
-
+School ID <input type="text" name="SchoolID" required> <br> <br>
 School Name <input type="text" name="SchoolName" required> <br> <br>
 Locality   <br>
 Rural <input type="radio" name="Locality" value="Rural">
 Urban <input type="radio" name="Locality" value="Urban">
 Tribal <input type="radio" name="Locality" value="Tribal"> <br>
 School Address <textarea  name = "SchoolAddress" rows="4" cols="50" placeholder="Please enter the address" required> </textarea> <br> <br>
-Cluster/Block/Region/State <textarea name = "Region" rows="4" cols="50" placeholder="Please enter the Region" required> </textarea> <br> <br>
+District <textarea name = "District" rows="4" cols="50" placeholder="Please enter the District" required> </textarea> <br> <br>
+State <textarea name = "State" rows="4" cols="50" placeholder="Please enter the State" required> </textarea> <br> <br>
 Total Classes <br>
 Lower Primary School (1 - 5th std)<input type="radio" name="TotClasses" value="LPS">
 Higher Primary (1 - 7th std)<input type="radio" name="TotClasses" value="HP7">
@@ -110,166 +111,91 @@ Other <input type="text" name="Medium" value="Other"> <br>
 
 Total Number of Students: <input type="text" name="NumberOfStudent" required> <br>
 
-Kannada Medium <br>
+Students <br>
 
 <table style="width:50%" name="KannadaMediumTable">
   <tr>
     <th>Class</th>
     <th >Boys</th>
 	<th >Girls</th>
+        <th>Medium</th>
 	<th >Total</th>
+        
   </tr>
   <tr>
-    <td> 1 </td>
+      <td> <input type="label" name="c1" value="1"/></td>
     <td><input type="text" name = "BKM1"></td>
     <td><input type="text" name = "GKM1"></td>
-    <td><input type="text" name = "TKM1"></td>
+    <td><input type="text" name = "MKM1"></td>
+     <td><input type="text" name = "TKM1"></td>
   </tr>
   <tr>
-    <td> 2 </td>
+    <td><input type="label" name="c2" value="2"/></td>
     <td><input type="text" name = "BKM2"></td>
     <td><input type="text" name = "BKM2"></td>
+    <td><input type="text" name = "MKM2"></td>
     <td><input type="text" name = "BKM2"></td>
   </tr>
   <tr>
-    <td> 3 </td>
+    <td> <input type="label" name="c3" value="3"/> </td>
     <td><input type="text" name = "BKM3"></td>
     <td><input type="text" name = "GKM3"></td>
+    <td><input type="text" name = "MKM3"></td>
     <td><input type="text" name = "TKM3"></td>
   </tr>
-  <td> 4 </td>
+  <td> <input type="label" name="c4" value="4"/> </td>
     <td><input type="text" name = "BKM4"></td>
     <td><input type="text" name = "GKM4"></td>
+    <td><input type="text" name = "MKM4"></td>
     <td><input type="text" name = "TKM4"></td>
   </tr>
   <tr>
-    <td> 5 </td>
+    <td><input type="label" name="c5" value="5"/> </td>
     <td><input type="text" name = "BKM5"></td>
     <td><input type="text" name = "GKM5"></td>
+    <td><input type="text" name = "MKM5"></td>
     <td><input type="text" name = "TKM5"></td>
   </tr>
   <tr>
-    <td> 6 </td>
+    <td><input type="label" name="c6" value="6"/></td>
     <td><input type="text" name = "BKM6"></td>
     <td><input type="text" name = "GKM6"></td>
+    <td><input type="text" name = "MKM6"></td>
     <td><input type="text" name = "TKM6"></td>
   </tr>
-  <td> 7 </td>
+  <td><input type="label" name="c7" value="7"/></td>
     <td><input type="text" name = "BKM7"></td>
     <td><input type="text" name = "GKM7"></td>
+    <td><input type="text" name = "MKM7"></td>
     <td><input type="text" name = "TKM7"></td>
   </tr>
   <tr>
-    <td> 8 </td>
+    <td> <input type="label" name="c8" value="8"/> </td>
     <td><input type="text" name = "BKM8"></td>
-    <td><input type="text" name = "GKM9"></td>
-    <td><input type="text" name = "TKM10"></td>
+    <td><input type="text" name = "GKM8"></td>
+    <td><input type="text" name = "MKM8"></td>
+    <td><input type="text" name = "TKM8"></td>
   </tr>
   <tr>
-    <td> 9 </td>
+    <td> <input type="label" name="c9" value="9"/> </td>
     <td><input type="text" name = "BKM9"></td>
     <td><input type="text"name = "GKM9"></td>
+    <td><input type="text" name = "MKM9"></td>
     <td><input type="text"name = "TKM9"></td>
   </tr>
   <tr>
-    <td> 10 </td>
+    <td> <input type="label" name="c10" value="10"/> </td>
     <td><input type="text" name = "BKM10"></td>
     <td><input type="text" name = "GKM10"></td>
+    <td><input type="text" name = "MKM10"></td>
     <td><input type="text" name = "TKM10"></td>
   </tr>
 
 </table
 <br>
-English Medium <br>
 
-<table style="width:50%" name="EnglishMediumTable">
-  <tr>
-    <th>Class</th>
-    <th >Boys</th>
-	<th >Girls</th>
-	<th >Total</th>
-  </tr>
-  <tr>
-    <td> 1 </td>
-    <td><input type="text" name = "BEM1"></td>
-    <td><input type="text" name = "GEM1"></td>
-    <td><input type="text" name = "TEM1"></td>
-  </tr>
-  <tr>
-    <td> 2 </td>
-    <td><input type="text" name = "BEM2"></td>
-    <td><input type="text" name = "GEM2"></td>
-    <td><input type="text" name = "TEM2"></td>
-  </tr>
-  <tr>
-    <td> 3 </td>
-    <td><input type="text" name = "BEM3"></td>
-    <td><input type="text" name = "GEM3"></td>
-    <td><input type="text" name = "TEM3"></td>
-  </tr>
-  <td> 4 </td>
-    <td><input type="text" name = "BEM4"></td>
-    <td><input type="text" name = "GEM4"></td>
-    <td><input type="text" name = "TEM4"></td>
-  </tr>
-  <tr>
-    <td> 5 </td>
-    <td><input type="text" name = "BEM5"></td>
-    <td><input type="text" name = "GEM5"></td>
-    <td><input type="text"name = "TEM5"></td>
-  </tr>
-  <tr>
-    <td> 6 </td>
-    <td><input type="text" name = "BEM6"></td>
-    <td><input type="text"name = "GEM6"></td>
-    <td><input type="text"name = "TEM6"></td>
-  </tr>
-  <td> 7 </td>
-    <td><input type="text" name = "BEM7"></td>
-    <td><input type="text" name = "GEM7"></td>
-    <td><input type="text" name = "TEM7"></td>
-  </tr>
-  <tr>
-    <td> 8 </td>
-    <td><input type="text" name = "BEM8"></td>
-    <td><input type="text" name = "GEM8"></td>
-    <td><input type="text" name = "TEM8"></td>
-  </tr>
-  <tr>
-    <td> 9 </td>
-    <td><input type="text" name = "BEM9"></td>
-    <td><input type="text" name = "GEM9"></td>
-    <td><input type="text" name = "TEM9"></td>
-  </tr>
-  <tr>
-    <td> 10 </td>
-    <td><input type="text" name = "BEM10"></td>
-    <td><input type="text" name = "GEM10"></td>
-    <td><input type="text" name = "TEM10"></td>
-  </tr>
-</table> <br>
-Children With Special needs
-<table style="width:50%" name="ChildrenWithSpecialNeeds">
-  <tr>
-    <th>Class</th>
-    <th >Boys</th>
-	<th >Girls</th>
-	<th >Total</th>
-  </tr>
-    <tr>
-    <td> School </td>
-    <td><input type="text" name = "CNS1"></td>
-    <td><input type="text" name = "CNS2"></td>
-    <td><input type="text" name = "CNS3"></td>
-  </tr>
-  <tr>
-    <td> Home Based Care </td>
-    <td><input type="text" name = "CNH1"></td>
-    <td><input type="text" name = "CNH2"></td>
-    <td><input type="text" name = "CNH3"></td>
-  </tr>
-</table>
-<br>
+ <br>
+
 SC/ST Children Details <br>
 <table style="width:50%" name="SC/ST_Children">
   <tr>
@@ -455,7 +381,7 @@ School Profile continuation <br>
 </table>
 
 Any Other Information:
-<Textarea rows="3" cols="50" ></Textarea>
+<Textarea rows="3" cols="50" name="otherinfo" ></Textarea>
 
 
 <input type="submit" value="Submit">
