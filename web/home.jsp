@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Concept by gettemplates.co
-	Twitter: http://twitter.com/gettemplateco
-	URL: http://gettemplates.co
--->
+
 <html>
 	<head>
 	
@@ -44,25 +40,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2 text-left">
-					<div id="fh5co-logo"><a href="index.html">CWF<span>.</span></a></div>
+					<div id="fh5co-logo"><a href="home.jsp">CWF<span>.</span></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li><a href="home.html">Home</a></li>
+						<li><a href="home.jsp">Home</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">Login</a>
+							<a href="adminlogin.jsp">Login</a>
 							<ul class="dropdown">
-								<li><a href="adminlogin.html">Admin</a></li>
-								<li><a href="ngologin.html">NGO Head</a></li>
-								<li><a href="volunteerlogin.html">Volunteer</a></li>
+								<li><a href="adminlogin.jsp">Admin</a></li>
+								<li><a href="ngologin.jsp">NGO</a></li>
+								<li><a href="volunteerlogin.jsp">Volunteer</a></li>
 								
 							</ul>
 						</li>
 
 						
-						<li><a href="about.html">About</a></li>
 						
-						<li><a href="contact.html">Contact</a></li>
+						
+						<li><a href="contact.jsp">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -225,10 +221,8 @@
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="twitter.com"><i class="icon-twitter"></i></a></li>
+							<li><a href="facebook.com"><i class="icon-facebook"></i></a></li>
 						</ul>
 					</p>
 				</div>
