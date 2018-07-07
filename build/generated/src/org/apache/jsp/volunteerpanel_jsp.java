@@ -175,9 +175,9 @@ public final class volunteerpanel_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("  <tr>\n");
       out.write("    <td><input type=\"label\" name=\"c2\" value=\"2\"/></td>\n");
       out.write("    <td><input type=\"text\" name = \"BKM2\"></td>\n");
-      out.write("    <td><input type=\"text\" name = \"BKM2\"></td>\n");
+      out.write("    <td><input type=\"text\" name = \"GKM2\"></td>\n");
       out.write("    <td><input type=\"text\" name = \"MKM2\"></td>\n");
-      out.write("    <td><input type=\"text\" name = \"BKM2\"></td>\n");
+      out.write("    <td><input type=\"text\" name = \"TKM2\"></td>\n");
       out.write("  </tr>\n");
       out.write("  <tr>\n");
       out.write("    <td> <input type=\"label\" name=\"c3\" value=\"3\"/> </td>\n");

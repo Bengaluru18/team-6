@@ -179,6 +179,7 @@ public class enterdetails extends HttpServlet {
         String c10=request.getParameter("c10");
        PreparedStatement schooldetails=null;
        PreparedStatement student=null;
+       PreparedStatement student2=null;
        
        Connection con=null;
        try
@@ -198,7 +199,7 @@ public class enterdetails extends HttpServlet {
            schooldetails.setString(10, moi);
            schooldetails.setString(11, dise);
            //out.println(schoolname +""+locality+""+address+""+district+""+state+""+totalclasses+""+gender+""+total+""+moi+""+dise);
-           //schooldetails.execute();
+           schooldetails.execute();
            
            student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
            student.setInt(1, schoolid);
@@ -208,71 +209,89 @@ public class enterdetails extends HttpServlet {
            student.setString(5, tkm1);
            student.setString(6,mkm1 );
            student.execute();
-           /*student.setString(1, schoolid);
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c2);
            student.setString(3, bkm2);
            student.setString(4, gkm2);
-           student.setString(5, mkm2);
-           student.setString(6, tkm2);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm2);
+           student.setString(6, mkm2);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c3);
            student.setString(3, bkm3);
            student.setString(4, gkm3);
-           student.setString(5, mkm3);
-           student.setString(6, tkm3);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm3);
+           student.setString(6, mkm3);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c4);
            student.setString(3, bkm4);
            student.setString(4, gkm4);
-           student.setString(5, mkm4);
-           student.setString(6, tkm4);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm4);
+           student.setString(6, mkm4);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c5);
            student.setString(3, bkm5);
            student.setString(4, gkm5);
-           student.setString(5, mkm5);
-           student.setString(6, tkm5);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm5);
+           student.setString(6, mkm5);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c6);
            student.setString(3, bkm6);
            student.setString(4, gkm6);
-           student.setString(5, mkm6);
-           student.setString(6, tkm6);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm6);
+           student.setString(6, mkm6);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c7);
            student.setString(3, bkm7);
            student.setString(4, gkm7);
-           student.setString(5, mkm7);
-           student.setString(6, tkm7);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm7);
+           student.setString(6, mkm7);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c8);
            student.setString(3, bkm8);
            student.setString(4, gkm8);
-           student.setString(5, mkm8);
-           student.setString(6, tkm8);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm8);
+           student.setString(6, mkm8);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c9);
            student.setString(3, bkm9);
            student.setString(4, gkm9);
-           student.setString(5, mkm9);
-           student.setString(6, tkm9);
-           student.addBatch();
-           student.setString(1, schoolid);
+           student.setString(5, tkm9);
+           student.setString(6, mkm9);
+           student.execute();
+           student.close();
+           student=con.prepareStatement("insert into student(school_id,class,boys,girls,total,mdm) values(?,?,?,?,?,?)");
+           student.setInt(1, schoolid);
            student.setString(2, c10);
            student.setString(3, bkm10);
            student.setString(4, gkm10);
-           student.setString(5, mkm10);
-           student.setString(6, tkm10);
-           student.addBatch();*/
-           
-           
+           student.setString(5, tkm10);
+           student.setString(6, mkm10);
+           student.execute();
+           student.close();
+         
           out.println("<script type=\"text/javascript\">");
                 out.println("alert('Successfully Entered');");
                 out.println("location='volunteerpanel.jsp';");
@@ -281,10 +300,11 @@ public class enterdetails extends HttpServlet {
        }
        catch(Exception e)
        {
-           out.println("<script type=\"text/javascript\">");
+           e.printStackTrace();
+           /*out.println("<script type=\"text/javascript\">");
                 out.println("alert('Incorrect Data Entered, Try Again');");
                 out.println("location='volunteerpanel.jsp';");
-                out.println("</script>");
+                out.println("</script>");*/
        }
     }
 }

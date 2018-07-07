@@ -132,9 +132,9 @@ Students <br>
   <tr>
     <td><input type="label" name="c2" value="2"/></td>
     <td><input type="text" name = "BKM2"></td>
-    <td><input type="text" name = "BKM2"></td>
+    <td><input type="text" name = "GKM2"></td>
     <td><input type="text" name = "MKM2"></td>
-    <td><input type="text" name = "BKM2"></td>
+    <td><input type="text" name = "TKM2"></td>
   </tr>
   <tr>
     <td> <input type="label" name="c3" value="3"/> </td>
