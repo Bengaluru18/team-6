@@ -224,49 +224,33 @@ SC/ST Children Details <br>
 </table>
 
 School DISE Code <input type="text" name="SchoolDISE"> <br>
-Teachers details <input type="text" name="TeachersDetails"> <br>
+
 <br>
 <table style="width:45%" name="FullTimeJob">
   <tr>
-    <th colspan="2" >FullTime</th>
-	<th >Total</th>
+    <th colspan="2" >FullTime/PartTime</th>
+	
   </tr>
   
   <tr>
     <tr>
     <th >Male</th>
 	<th >Female</th>
+        <th>FullTime/PartTime</th>
+        <th >Total</th>
     </tr>
   
     <tr>
     <td><input type="text" name = "FT1"></td>
     <td><input type="text" name = "FT2"></td>
 	<td><input type="text" name = "FT3"></td>
+        <td><input type="text" name = "FT4"></td>
     </tr>
   </tr>
   
 </table>
 <br>
-<table style="width:45%" name="PartTimeJob">
-  <tr>
-    <th colspan="2" >PartTime</th>
-	<th >Total</th>
-  </tr>
-  
-  <tr>
-    <tr>
-    <th >Male</th>
-	<th >Female</th>
-    </tr>
-  
-    <tr>
-    <td><input type="text" name = "PT1"></td>
-    <td><input type="text" name = "PT2"></td>
-	<td><input type="text" name = "PT3"></td>
-    </tr>
-  </tr>2
-  
-</table><br>
+<br>
 School Profile continuation <br>
 
 <table style="width:50%" name="StudentProf2">
@@ -277,75 +261,34 @@ School Profile continuation <br>
 	<th >Email id</th>
   </tr>
   
-   <td> HM </td>
+   <td> <input type="label" name="HM" value="HM"/> </td>
     <td><input type="text" name="HM1"></td>
     <td><input type="text" name="HM2">></td>
     <td><input type="email" name="HM3">></td>
   </tr>
   
-  <td> Assistant Teacher</td>
+  <td><input type="label" name="AT" value="Assistant Teacher"/></td>
     <td><input type="text" name="AT1">></td>
     <td><input type="text" name="AT2">></td>
     <td><input type="email" name="AT3">></td>
   </tr>
   
-  <td> CRP </td>
+  <td> <input type="label" name="CRP" value="CRP"/> </td>
     <td><input type="text" name="CRP1">></td>
     <td><input type="text" name="CRP2">></td>
     <td><input type="email"name="CRP3">></td>
   </tr>
   
-  <td> BRC </td>
+  <td> <input type="label" name="BRC" value="BRC"/> </td>
     <td><input type="text" name="BRC1">></td>
     <td><input type="text" name="BRC2">></td>
     <td><input type="email" name="BRC3">></td>
   </tr>
   
-  <td> BEO/CEO </td>
+  <td><input type="label" name="BEO" value="BEO/CEO"/></td>
     <td><input type="text" name="BEO1">></td>
     <td><input type="text" name="BEO2">></td>
     <td><input type="email" name="BEO3">></td>
-  </tr>
-  
-</table>
-
-<table style="width:50%" name="StudentProf3">
-  <tr>
-
-    <th>StakeHolder</th>
-    <th >total Members</th>
-	<th >Meeting Duration</th>
-	<th >Contact details</th>
-  </tr>
-  
-   <td> SDMC </td>
-    <td><input type="text" name="SDMC1">></td>
-    <td><input type="text" name="SDMC2">></td>
-    <td><input type="text" name="SDMC3">></td>
-  </tr>
-  
-  <td> SMC/SBC</td>
-    <td><input type="text" name="SM1">></td>
-    <td><input type="text" name="SM2">></td>
-    <td><input type="text" name="SM3">></td>
-  </tr>
-  
-  <td> Allumini Association </td>
-    <td><input type="text" name="AA1">></td>
-    <td><input type="text" name="AA2">></td>
-    <td><input type="text" name="AA3">></td>
-  </tr>
-  
-  <td> Shala Samsath </td>
-    <td><input type="text" name="SS1"></td>
-    <td><input type="text" name="SS2"></td>
-    <td><input type="text" name="SS3"></td>
-  </tr>
-  
-  <td> Parents Teachers Meeting </td>
-    <td><input type="text" name="PTM1"></td>
-    <td><input type="text" name="PTM2"></td>
-    <td><input type="text" name="PTM3"></td>
   </tr>
   
 </table>
