@@ -28,6 +28,10 @@
         <servlet-name>enterdetails3</servlet-name>
         <servlet-class>enterdetails3</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>viewdetails</servlet-name>
+        <servlet-class>viewdetails</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginadmin</servlet-name>
         <url-pattern>/loginadmin</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>enterdetails3</servlet-name>
         <url-pattern>/enterdetails3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>viewdetails</servlet-name>
+        <url-pattern>/viewdetails</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

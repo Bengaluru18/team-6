@@ -1,3 +1,4 @@
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -74,25 +75,11 @@
 			
 		</div>
 	</nav>
-
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7 text-left">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
-							<h1 class="mb30">Administrator Portal</h1>
-                                                        <h2 class="mb30">CareWorks Foundation</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<
+	
             <%
     
-    int school_id=0;
+    Integer schid = (Integer) session.getAttribute("sid");
     String school_name="";
     String total="";
     String list[]= new String[100];
@@ -103,10 +90,13 @@
        String PW="root";
           Class.forName("com.mysql.jdbc.Driver");
            con=DriverManager.getConnection(url,UN,PW);
-    Statement st = con.createStatement();
-    
+    PreparedStatement st = con.prepareStatement("select * from school_details where school_id=?");
+    st.setInt(1, schid);
     ResultSet rs=null;
 %>    
+            <% 
+                session.getAttribute("sid");
+ %>
 <table style="width:100%" align="center">
   
     <tr>
@@ -118,26 +108,48 @@
         
     </tr>
 <%
-    rs = st.executeQuery("SELECT school_id,school_name, total_no_of_students  FROM school_details order by total_no_of_students desc;");
+    rs = st.executeQuery();
     while(rs.next())
     { 
-    school_id=rs.getInt(1);
-    school_name=rs.getString(2);
-    total=rs.getString(3);
+    
     
 %>    
     <tr>
         
         <td>
-            <%=school_id%>
+            <%=rs.getInt(1)%>
         </td>
         
         
         <td>
-            <%=school_name%>
+            <%=rs.getString(2)%>
         </td>
     <td>
-            <%=total%>
+            <%=rs.getString(3)%>
+        </td>
+         <td>
+            <%=rs.getString(4)%>
+        </td>
+         <td>
+            <%=rs.getString(5)%>
+        </td>
+         <td>
+            <%=rs.getString(6)%>
+        </td>
+         <td>
+            <%=rs.getString(7)%>
+        </td>
+         <td>
+            <%=rs.getString(8)%>
+        </td>
+         <td>
+            <%=rs.getString(9)%>
+        </td>
+         <td>
+            <%=rs.getString(10)%>
+        </td>
+         <td>
+            <%=rs.getString(11)%>
         </td>
         
     </tr>
