@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+<title> DashBoard </title>
+<h1 align="center" >CareWorks Foundation</h1>
+<h2 align="center" >DashBoard</h2>
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Progress"
+	},
+	axisY: {
+		title: "Percentage Completed"
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		dataPoints: [      
+			{ y: 60, label: "School Environment" },
+			{ y: 45,  label: "Class Environment" },
+			{ y: 85,  label: "Health" },
+			{ y: 90,  label: "StakeHolder Investment" },
+			{ y: 85,  label: "Others" }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+Number of Schools: <input type="text" name="nos1" > <br> <br>
+Number of Students:  <input type="text" name="nos2" > <br> <br>
+
+<div id="piechart1"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Progress'],
+  ['Complete', 6],
+  ['incomplete', 4]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'  Overall Progress', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+  chart.draw(data, options);
+}
+
+</script>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<head> <h3>Project wise Progress </h3></head>
+<h4>Project 1 </h4></head>
+School Name : <input type="text" name="SName1"> <br> <br>
+Number of Students: <input type = "number" name="studs1" > <br> <br>
+Number of NGOs helping the School: <input type = "number" name="ngos1" > <br> <br>
+<head> <h3>Work Progress Category Wise</h3>
+<h4>School Environment </h4> </head>
+Time Progress <progress value="22" max="100"></progress> <br> <br>
+Activity progress <progress value="42" max="100"></progress> <br> <br>
+Quality <progress value="82" max="100"></progress> <br> <br>
+Resources : Money, Kind
+
+<div id="piechart2"></div>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Progress'],
+  ['Complete', 4],
+  ['incomplete', 5]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'  Overall Progress', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>
+
+<h4>Project 2 </h4></head>
+School Name : <input type="text" name="SName2"> <br> <br>
+Number of Students: <input type = "number" name="studs2" > <br> <br>
+Number of NGOs helping the School: <input type = "number" name="ngos2" > <br> <br>
+<head> <h3>Work Progress Category Wise</h3>
+<h4>School Environment </h4> </head>
+Time Progress <progress value="22" max="100"></progress> <br> <br>
+Activity progress <progress value="52" max="100"></progress> <br> <br>
+Quality <progress value="62" max="100"></progress> <br> <br>
+Resources :  Kind
+
+<div id="piechart3"></div>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Progress'],
+  ['Complete', 5],
+  ['incomplete', 4]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'  Overall Progress', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+  chart.draw(data, options);
+}
+</script>
+
+<h4>Project 3 </h4></head>
+School Name : <input type="text" name="SName3"> <br> <br>
+Number of Students: <input type = "number" name="studs3" > <br> <br>
+Number of NGOs helping the School: <input type = "number" name="ngos3" > <br> <br>
+<head> <h3>Work Progress Category Wise</h3>
+<h4>School Environment </h4> </head>
+Time Progress <progress value="72" max="100"></progress> <br> <br>
+Activity progress <progress value="58" max="100"></progress> <br> <br>
+Quality <progress value="92" max="100"></progress> <br> <br>
+Resources : Money
+
+<div id="piechart4"></div>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Progress'],
+  ['Complete', 8],
+  ['incomplete', 4]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'  Overall Progress', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart4'));
+  chart.draw(data, options);
+}
+</script>
+
+<h4>Project 4 </h4></head>
+School Name : <input type="text" name="SName4"> <br> <br>
+Number of Students: <input type = "number" name="studs4" > <br> <br>
+Number of NGOs helping the School: <input type = "number" name="ngos4" > <br> <br>
+<head> <h3>Work Progress Category Wise</h3>
+<h4>School Environment </h4> </head>
+Time Progress <progress value="72" max="100"></progress> <br> <br>
+Activity progress <progress value="58" max="100"></progress> <br> <br>
+Quality <progress value="92" max="100"></progress> <br> <br>
+Resources : Money
+
+<div id="piechart5"></div>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Progress'],
+  ['Complete', 9],
+  ['incomplete', 10]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'  Overall Progress', 'width':550, 'height':550};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart5'));
+  chart.draw(data, options);
+}
+</script>
+
+
+</body>
+</html>
